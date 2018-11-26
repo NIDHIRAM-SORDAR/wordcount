@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>TOTAL COUNT</h1>
+    <a href="{% url 'home' %}">Start New Word Count</a>
+    <h2> There are {{ count }} words in Your Text</h2>
+    <h2> Frequent occurs word: {{ frequent_word }}</h2>
+    <h3> Your Text: </h3>
+    <p>
+    	{{ user_text }}
+    </p>
+{% endblock content %}
